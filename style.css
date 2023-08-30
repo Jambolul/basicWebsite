@@ -4,6 +4,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+:root {
+--bistre: #2D1B11ff;
+--caf-noir: #573726ff;
+--smoky-black: #14100Dff;
+--raw-umber: #905732ff;
+--lion: #C5965Cff;
+}
 body {
     margin-left: 100px;
     margin-right: 100px;
@@ -27,26 +34,27 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #0f2276;
+    background-color: var(--lion);
     border-radius: 7px;
     
   }
   li {
     float: left;
     display: inline;
-    padding: 10px;
+    height: 45px;
  
   }
   li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 30px;
+    padding: 10px 40px;
     text-decoration: none;
+    height: 100%;
   }
 
   li a:hover {
-    background-color: #130625;
+    background-color: var(--raw-umber);
   }
 .contentbox {
 
@@ -54,7 +62,7 @@ nav {
     width: 100%;
     height: 200px;
     margin: 150px auto 0px;
-    background-image: url("img/background.jpg");
+    background-image: url("img/coffee-background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 15px;
@@ -62,6 +70,11 @@ nav {
     overflow: hidden;
    /* overflow: hidden;*/
     }
+
+.logo {
+  width: 50px;
+  
+}
 
 
 h3 {
@@ -78,7 +91,7 @@ h4 {
 
 
 .mainimg {
-    width: 150px;
+    width: 200px;
     height: auto;
     float: left;
     margin: 0 15px;
@@ -93,7 +106,7 @@ footer {
     left:0;
     width: 100%;
     margin: auto;
-    background-color: bisque;  }
+    background-color: var(--raw-umber)  }
 
     .beans {
         width: 100px;
