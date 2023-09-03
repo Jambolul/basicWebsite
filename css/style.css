@@ -10,12 +10,29 @@
 --smoky-black: #14100Dff;
 --raw-umber: #905732ff;
 --lion: #C5965Cff;
+
+
+/*Dialogin root muuttujat*/
+--ratio: 3.74;
+--cta-color: rgb(0, 102, 254);
+--light-color-bg: rgb(238, 241, 247);
+--dark-color-bg: rgb(55, 65, 81);
+--grey-color: rgb(107, 114, 128);
+--leading: 0.025em;
 }
 body {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 0px;
 }
+
+/* body:has(dialog[open]) {
+  overflow-y: hidden;
+}
+ */
+ dialog[open] {
+  overflow-y: hidden;
+ }
 
 .clearfix::after {
     content: "";
@@ -61,8 +78,8 @@ nav {
     padding: 20px;
     width: 100%;
     height: 200px;
-    margin: 150px auto 0px;
-    background-image: url("img/coffee-background.jpg");
+    margin: 10px auto 70px;
+    background-image: url("coffee-background.jpg"); 
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 15px;
@@ -72,7 +89,7 @@ nav {
     }
 
 .logo {
-  width: 50px;
+  width: 45px;
   
 }
 

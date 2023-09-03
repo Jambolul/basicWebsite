@@ -3,7 +3,9 @@
   <head>
     <title>Basic website</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dialog.css" />
+    <script src="js/dialog.js" defer></script>
   </head>
 
   <body>
@@ -19,7 +21,12 @@
     </nav>
 
     <main>
-      <p>Lisää sisältöä seuraavina viikkoina</p>
+      <div id="spacer" style="height: 200px; margin-top: 10px">
+        <p>Lisää sisältöä seuraavina viikkoina</p>
+
+        <button id="open_dialog">Open Dialog</button>
+      </div>
+
       <div class="container">
         <div class="contentbox">
           <div class="allcontents">
@@ -50,5 +57,55 @@
       Protected by every single law there is, if you try to copy we come after
       your family
     </footer>
+
+    <dialog>
+      <div id="dialogContent">
+        <h3>Register please</h3>
+        <img src="img/coffeegif.gif" id="coffeeGif" alt="Gif of a coffee cup" />
+
+        <form class="userForm" method="get">
+          <div class="dialogField">
+            <label for="username">Name (min 3 chars): </label>
+            <input
+              type="text"
+              name="username"
+              autocomplete="name"
+              id="username"
+              placeholder="name here"
+              minlength="3"
+              required
+            />
+          </div>
+          <div class="dialogField">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@metropolia.fi"
+              required
+              pattern=".+@metropolia\.fi"
+            />
+          </div>
+
+          <div class="dialogField">
+            <label for="pwd">Password:</label>
+            <input
+              type="password"
+              name="pwd"
+              id="pwd"
+              placeholder="password here"
+              required
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$"
+              minlength="6"
+            />
+          </div>
+        </form>
+        <div class="flex flex-space-between">
+          <button id="close_dialog">Close</button>
+          <button id="confirm_dialog" class="cta">Confirm</button>
+        </div>
+      </div>
+    </dialog>
   </body>
 </html>
