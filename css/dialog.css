@@ -5,8 +5,8 @@ dialog::backdrop {
         border: 2px solid var(--caf-noir);
         display: block;
         margin-top: 2rem;
-        width: calc(44px * var(--ratio));
-        height: 44px;
+        width: calc(36px * var(--ratio));
+        height: 36px;
         border-radius: calc(3px * var(--ratio));
         letter-spacing: calc(3 * var(--leading, 0.025em));
         font-family: inherit;
@@ -96,13 +96,25 @@ dialog::backdrop {
           width: 90%;
           margin: 0px;
           padding: 10px;
+          border: 1px solid black;
+          border-left: 10px solid;
+          background-color: white;
+
+          transition: border-color 1s;
         }
 
         .userForm input:invalid {
-          background-color: rgba(255, 42, 0, 0.463);
+          border-left-color: rgba(255, 42, 0, 0.463);
+          
         }
         .userForm input:valid {
-          background-color: lightgreen;
+          
+          border-left-color: lightgreen;
+          
+        }
+
+        .userForm input:focus {
+          background-color: lightgoldenrodyellow;
         }
         .dialogField {
           margin: 10px auto;

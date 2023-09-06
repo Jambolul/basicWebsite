@@ -63,7 +63,7 @@
         <h3>Register please</h3>
         <img src="img/coffeegif.gif" id="coffeeGif" alt="Gif of a coffee cup" />
 
-        <form class="userForm" method="get">
+        <form class="userForm">
           <div class="dialogField">
             <label for="username">Name (min 3 chars): </label>
             <input
@@ -100,11 +100,11 @@
               minlength="6"
             />
           </div>
+          <div class="flex flex-space-between">
+            <button id="close_dialog">Close</button>
+            <button type="submit">Confirm</button>
+          </div>
         </form>
-        <div class="flex flex-space-between">
-          <button id="close_dialog">Close</button>
-          <button id="confirm_dialog" class="cta">Confirm</button>
-        </div>
       </div>
     </dialog>
   </body>
