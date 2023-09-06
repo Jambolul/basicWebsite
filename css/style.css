@@ -145,3 +145,8 @@ footer {
         position: relative;
     }
 
+    #open_dialog {
+      width: calc(40px * var(--ratio));
+      height: 40px;
+    }
+
