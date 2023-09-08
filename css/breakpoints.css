@@ -45,7 +45,7 @@ footer {
         height: 250px;
     }
     #open_dialog {
-        font-size: 15px;
+        font-size: 13px;
         width: calc(35px * var(--ratio));
         height: 35px;
     }
