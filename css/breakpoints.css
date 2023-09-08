@@ -1,10 +1,14 @@
 @media screen and (max-width: 800px) {
 
     .maintext {
-        font-size: 9px;
+        font-size: 12px;
         margin: 2px;
 
     }
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
 }
 
 @media screen and (max-width: 670px) {
@@ -15,38 +19,40 @@
         float: none;
     }
 
-      li a {
-        padding: 10px 20px;
-      }
+
+
 }
 
 
 @media screen and (max-width: 600px) {
 
-.contentbox {
-  
-    top: 0%;
-    transform: none;
-    background-size: auto;
+    .hero-image {
+        height: 300px;
+    }
+
+footer {
+    font-size: 12px;
 }
 }
 
 @media screen and (max-width: 500px) {
+    .hero-image {
+        height: 250px;
+    }
     #open_dialog {
-        font-size: 12px;
-        width: calc(30px * var(--ratio));
-        height: 30px;
+        font-size: 15px;
+        width: calc(35px * var(--ratio));
+        height: 35px;
     }
 
     
-    li a {
-        padding: 10px 10px;
-        font-size: 10px;
-      }
+li a {
+    padding: 10px 30px;
 
+}
  .contentbox {
     height: 275px;
-    padding: 10px;
+    padding: 15px;
 }
 .allcontents {
     margin: 0;
@@ -54,16 +60,16 @@
     top: 50%;
     transform: translateY(-50%);
 }
-
 h3 {
-    font-size: 0.9rem;
+    font-size: 16px;
 }
 
 h4 {
-    font-size: 0.6rem;
+    font-size: 14px;
 }
+
 .mainimg {
-    width: 125px;
+    width: 175px;
 }
 .beans {
     top: -50px;
@@ -78,24 +84,33 @@ footer {
 }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
+    .hero-image {
+        height: 200px;
+    }
+
+
     .logo {
         width: 30px;
     }
 
     li a {
-        padding: 10px 5px;
-        font-size: 8px;
+        padding: 10px 20px;
+        font-size: 15px;
+    
     }
     h3 {
-        font-size: 0.7rem;
+        font-size: 13px;
     }
     
     h4 {
-        font-size: 0.4rem;
+        font-size: 1px;
     }
     .maintext {
-        font-size: 7px;
+        font-size: 9px;
 
+    }
+    .allcontents {
+        top: 35%;
     }
 }
