@@ -1,0 +1,101 @@
+@media screen and (max-width: 800px) {
+
+    .maintext {
+        font-size: 9px;
+        margin: 2px;
+
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .contentbox {
+        height: 250px;
+    }
+    .mainimg {
+        float: none;
+    }
+
+      li a {
+        padding: 10px 20px;
+      }
+}
+
+
+@media screen and (max-width: 600px) {
+
+.contentbox {
+  
+    top: 0%;
+    transform: none;
+    background-size: auto;
+}
+}
+
+@media screen and (max-width: 500px) {
+    #open_dialog {
+        font-size: 12px;
+        width: calc(30px * var(--ratio));
+        height: 30px;
+    }
+
+    
+    li a {
+        padding: 10px 10px;
+        font-size: 10px;
+      }
+
+ .contentbox {
+    height: 275px;
+    padding: 10px;
+}
+.allcontents {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h3 {
+    font-size: 0.9rem;
+}
+
+h4 {
+    font-size: 0.6rem;
+}
+.mainimg {
+    width: 125px;
+}
+.beans {
+    top: -50px;
+    right: -30px;
+    width: 75px;
+    height: 75px;
+}
+
+footer {
+    font-size: 10px;
+    padding: 10px;
+}
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        width: 30px;
+    }
+
+    li a {
+        padding: 10px 5px;
+        font-size: 8px;
+    }
+    h3 {
+        font-size: 0.7rem;
+    }
+    
+    h4 {
+        font-size: 0.4rem;
+    }
+    .maintext {
+        font-size: 7px;
+
+    }
+}

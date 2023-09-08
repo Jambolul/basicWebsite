@@ -25,6 +25,19 @@ body {
     margin-right: 100px;
     margin-top: 0px;
 }
+.hero-image {
+  position: relative;
+  width: 100%;
+  background-image: url("../img/herobanner.jpg");
+  background-position: 100% 75%;
+  height: 350px;
+  top: 0;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  
+  
+  
+}
 
 /* body:has(dialog[open]) {
   overflow-y: hidden;
@@ -42,7 +55,7 @@ body {
 
 nav {
     margin-top: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 
 }
 
@@ -52,7 +65,8 @@ nav {
     padding: 0;
     overflow: hidden;
     background-color: var(--lion);
-    border-radius: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     
   }
   li {
@@ -79,7 +93,7 @@ nav {
     width: 100%;
     height: 200px;
     margin: 10px auto 70px;
-    background-image: url("coffee-background.jpg"); 
+    background-image: url(../img/coffee-background.jpg); 
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 15px;
@@ -129,8 +143,8 @@ footer {
         width: 100px;
         height: 100px;
         position: absolute;
-        top: -40px;
-        right: -10px;
+        top: -60px;
+        right: -30px;
         overflow: visible;
 
       }
@@ -149,4 +163,5 @@ footer {
       width: calc(40px * var(--ratio));
       height: 40px;
     }
+
 
