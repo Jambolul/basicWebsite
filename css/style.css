@@ -1,8 +1,8 @@
 
 
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
+  font-family: Roboto, sans-serif, Arial, sans-serif;
+      box-sizing: border-box;
 }
 :root {
 --bistre: #2D1B11ff;
@@ -21,6 +21,7 @@
 --leading: 0.025em;
 }
 body {
+
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 0px;
@@ -34,9 +35,58 @@ body {
   top: 0;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  display: flex;
+
   
-  
-  
+}
+.hero-box {
+ 
+  flex-direction: column;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.226));
+
+}
+.hero-section1 {
+  flex: 5;
+
+}
+.hero-text {
+  margin: 5px;
+  color: whitesmoke;
+  font-size: 1em;
+
+}
+.hero-image h1 {
+  font-size: 1.5em;
+}
+
+.hero-section2 {
+  flex: 0.5;
+}
+
+.drinks-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--raw-umber);
+  margin: 15px;
+  font-size: 1em;
+}
+.drinks-list h2 {
+  margin: 5px;
+  font-size: 1.5em;
+}
+.drink-buttons {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.flex-button {
+  margin: 10px;
+  margin-bottom: 70px;
+  font-size: 1em;
 }
 
 /* body:has(dialog[open]) {
@@ -92,7 +142,7 @@ nav {
     padding: 20px;
     width: 100%;
     height: 200px;
-    margin: 10px auto 70px;
+    margin: 10px auto 100px;
     background-image: url(../img/coffee-background.jpg); 
     background-repeat: no-repeat;
     background-size: 100%;

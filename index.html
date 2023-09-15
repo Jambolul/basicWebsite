@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/dialog.css" />
     <link rel="stylesheet" href="css/breakpoints.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/dialog.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -21,12 +27,30 @@
         <li><a class="navitem" href="about.asp">About</a></li>
       </ul>
     </nav>
-    <div class="hero-image"></div>
+    <div class="hero-image">
+      <section class="hero-section2"></section>
+      <div class="hero-box">
+        <h1 class="hero-text">Cafe</h1>
+        <p class="hero-text">
+          Taste the best coffee in town, we have a wide selection of different
+          coffees and teas
+        </p>
+      </div>
+      <section class="hero-section1"></section>
+    </div>
 
     <main>
-      <div id="spacer" style="height: 150px; margin-top: 10px">
-        <p>Lisää sisältöä seuraavina viikkoina</p>
+      <div class="drinks-list">
+        <h2>Drinks</h2>
+        <h3>Check all our different options</h3>
+      </div>
+      <div class="drink-buttons">
+        <button class="flex-button">Coffee</button>
+        <button class="flex-button">Tea</button>
+        <button class="flex-button">Lemonade</button>
+      </div>
 
+      <div id="spacer" style="height: 50px; margin-top: 10px">
         <button id="open_dialog">Open Dialog</button>
       </div>
 
