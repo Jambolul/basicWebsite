@@ -1,9 +1,16 @@
 
 
-* {
-  font-family: Roboto, sans-serif, Arial, sans-serif;
-      box-sizing: border-box;
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
 }
+html {
+  font-family: "Roboto", sans-serif;
+  /* font-weight: 100; */
+  line-height: 2;
+}
+
+
 :root {
 --bistre: #2D1B11ff;
 --caf-noir: #573726ff;
